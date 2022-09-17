@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #25316d;
+  color: white;
+  display: grid;
+  font-family: 'Lato', sans-serif;
+  height: 100vh;
+  place-content: center;
+}
+
+h1,
+h2 {
+  text-align: center;
+  width: 400px;
+}
+
+h1 {
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+.letters-container {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 40px;
+  width: 400px;
+}
+
+.letter-block {
+  display: grid;
+  font-size: 1rem;
+  height: 40px;
+  place-content: center;
+  text-transform: uppercase;
+  width: 40px;
+}
+
+.container {
+  background-color: #5f6f94;
+  height: 400px;
+  width: 400px;
+}
+
+.container-panel {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100%;
+}
+
+.panel-1 {
+  border-bottom: 4px solid black;
+}
+
+.panel-2 {
+  border-bottom: 4px solid black;
+  border-left: 4px solid black;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 20% 50px;
+}
+
+.sub-panel-1 {
+  border-top: 4px solid black;
+}
+
+.sub-panel-2 {
+  border-left: 4px solid black;
+}
+
+.head-container {
+  display: flex;
+  grid-column: 1/3;
+  justify-content: center;
+}
+
+.head {
+  background-color: black;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+.body-container {
+  grid-column: 1/3;
+  height: 100px;
+  position: relative;
+}
+
+.body {
+  border-right: 2px solid black;
+  height: 100%;
+  width: 50%;
+}
+
+.legs,
+.arms {
+  border-left: 2px solid black;
+  border-top: 2px solid black;
+  height: 50px;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  right: 0;
+  rotate: z 45deg;
+  width: 50px;
+}
+
+.arms {
+  top: 0;
+  transform: translate(10px, 12px);
+}
+
+.legs {
+  bottom: 0;
+  transform: translate(40px, 42px);
+}
+
+.hidden {
+  display: none;
+}
+
+.letters-word {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 400px;
+}
+
+.letter-block-word {
+  border-bottom: 2px solid;
+  display: grid;
+  font-size: 1rem;
+  height: 40px;
+  margin-inline: 0.5rem;
+  place-content: center;
+  text-transform: uppercase;
+  width: 40px;
+}
+
+.button-help {
+  background-color: #97d2ec;
+  border: none;
+  color: #25316d;
+  cursor: pointer;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  height: 2rem;
+  margin-top: 1rem;
+}
